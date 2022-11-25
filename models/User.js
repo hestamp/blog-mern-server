@@ -16,7 +16,6 @@ const UserSchema = new mongoose.Schema(
       required: true,
     },
     avatarUrl: String,
-    dateString: { $dateToString: { format: '%d/%m/%Y', date: '$createdAt' } },
   },
   {
     timestamps: true,
