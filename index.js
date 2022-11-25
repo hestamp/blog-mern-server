@@ -19,11 +19,6 @@ mongoose
   .then(() => console.log('Data Base OK'))
   .catch((err) => console.log('DB error,', err))
 
-client.connect((err) => {
-  const collection = client.db('blog').collection('devices')
-  client.close()
-})
-
 const app = express()
 
 const storage = multer.diskStorage({
