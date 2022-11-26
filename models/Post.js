@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const idUser = mongoose.Schema.Types.ObjectId._id
+const idUser = mongoose.Schema.Types.ObjectId
 console.log(idUser)
 const PostSchema = new mongoose.Schema(
   {
