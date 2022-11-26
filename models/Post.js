@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
 
+const idUser = mongoose.Schema.Types.ObjectId._id
+
 const PostSchema = new mongoose.Schema(
   {
     title: {
@@ -21,7 +23,7 @@ const PostSchema = new mongoose.Schema(
     },
     ofDates: [Date],
     user: {
-      type: mongoose.Schema.Types.ObjectId?._id,
+      type: idUser,
       ref: 'User',
       required: true,
     },
