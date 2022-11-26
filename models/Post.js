@@ -21,7 +21,7 @@ const PostSchema = new mongoose.Schema(
     },
     ofDates: [Date],
     user: {
-      type: mongoose.Schema.Types.ObjectId._id,
+      type: mongoose.Schema.Types.ObjectId?._id,
       ref: 'User',
       required: true,
     },
