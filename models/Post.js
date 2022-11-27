@@ -21,7 +21,7 @@ const PostSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
-    ofDates: [Date],
+    ofDates: [Date].split('T')[0].split('-').reverse().join('-'),
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
