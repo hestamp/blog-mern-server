@@ -1,7 +1,5 @@
 import mongoose from 'mongoose'
 
-const idUser = mongoose.Schema.Types.ObjectId
-console.log(idUser)
 const PostSchema = new mongoose.Schema(
   {
     title: {
@@ -12,10 +10,6 @@ const PostSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-    },
-    tags: {
-      type: Array,
-      default: [],
     },
     viewsCount: {
       type: Number,
